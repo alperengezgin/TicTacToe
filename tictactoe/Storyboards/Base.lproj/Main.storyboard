@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="tictactoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bea-rw-qEO">
+                                <rect key="frame" x="79" y="443" width="256" height="70"/>
+                                <color key="backgroundColor" name="Tuscany"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="JwW-YO-Sgn"/>
+                                    <constraint firstAttribute="height" constant="70" id="oas-Df-HSE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lt1-ke-u06"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsB-eM-aEy">
+                                <rect key="frame" x="79" y="683" width="256" height="70"/>
+                                <color key="backgroundColor" name="Tuscany"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="iXg-z6-idW"/>
+                                    <constraint firstAttribute="width" constant="256" id="ytW-cT-wOS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kou-l0-tMX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9XX-7d-7bS">
+                                <rect key="frame" x="107" y="168" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="UNc-4P-WoG"/>
+                                    <constraint firstAttribute="height" constant="200" id="nXG-ei-eGb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGZ-bI-ddm">
+                                <rect key="frame" x="79" y="563" width="256" height="70"/>
+                                <color key="backgroundColor" name="Tuscany"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9UE-S1-yoy"/>
+                                    <constraint firstAttribute="width" constant="256" id="ne2-lp-fOk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJ0-jF-6FE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="AzureX11"/>
+                        <constraints>
+                            <constraint firstItem="PGZ-bI-ddm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Ce-J4-bQc"/>
+                            <constraint firstItem="bea-rw-qEO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.078125" id="7Mx-gF-JcT"/>
+                            <constraint firstItem="PGZ-bI-ddm" firstAttribute="top" secondItem="bea-rw-qEO" secondAttribute="bottom" constant="50" id="C0R-ud-8go"/>
+                            <constraint firstItem="PGZ-bI-ddm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.618357" id="Fqy-iF-qVX"/>
+                            <constraint firstItem="tsB-eM-aEy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L0O-8L-n8G"/>
+                            <constraint firstItem="bea-rw-qEO" firstAttribute="top" secondItem="9XX-7d-7bS" secondAttribute="bottom" constant="75" id="Lyz-rx-Sik"/>
+                            <constraint firstItem="bea-rw-qEO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="25" id="NqE-TF-wkX"/>
+                            <constraint firstItem="tsB-eM-aEy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.618357" id="ZtW-X6-RHX"/>
+                            <constraint firstItem="bea-rw-qEO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.618357" id="bpD-pP-vV9"/>
+                            <constraint firstItem="tsB-eM-aEy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.078125" id="gcQ-2C-0EH"/>
+                            <constraint firstItem="PGZ-bI-ddm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.078125" id="j3g-Os-Pt1"/>
+                            <constraint firstItem="9XX-7d-7bS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="p6W-WW-HpU"/>
+                            <constraint firstItem="tsB-eM-aEy" firstAttribute="top" secondItem="PGZ-bI-ddm" secondAttribute="bottom" constant="50" id="tA6-bj-Ykg"/>
+                            <constraint firstItem="bea-rw-qEO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yxr-CM-5hK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="-44"/>
+        </scene>
+        <!--Game Board View Controller-->
+        <scene sceneID="vkS-3X-pbA">
+            <objects>
+                <viewController storyboardIdentifier="GameBoardViewController" id="1Jj-Pp-WJe" customClass="GameBoardViewController" customModule="tictactoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8jy-Zb-7qo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgt-v6-slL">
+                                <rect key="frame" x="35" y="79" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Zrt-Rq-vKi"/>
+                                    <constraint firstAttribute="height" constant="40" id="esz-6l-u9P"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="1Jj-Pp-WJe" eventType="touchUpInside" id="U5Y-Ka-LpY"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F3F-bk-83n">
+                                <rect key="frame" x="47" y="293" width="320" height="320"/>
+                                <color key="backgroundColor" name="AzureX11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="FvB-dg-Adf"/>
+                                    <constraint firstAttribute="width" constant="320" id="jJI-UY-J06"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZK8-dC-aEV">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="estimatedItemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="gameboardcell" id="l8f-e6-Llv" customClass="GameBoardCell" customModule="tictactoe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hI3-i4-FXW">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcl-wf-SUK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Tuscany"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="fcl-wf-SUK" secondAttribute="trailing" id="YyU-JE-QTa"/>
+                                                <constraint firstItem="fcl-wf-SUK" firstAttribute="leading" secondItem="hI3-i4-FXW" secondAttribute="leading" id="hd9-Wi-Unh"/>
+                                                <constraint firstAttribute="bottom" secondItem="fcl-wf-SUK" secondAttribute="bottom" id="icm-yI-56g"/>
+                                                <constraint firstItem="fcl-wf-SUK" firstAttribute="top" secondItem="hI3-i4-FXW" secondAttribute="top" id="nda-8u-89n"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="fcl-wf-SUK" id="3NC-JC-Ls6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Jj-Pp-WJe" id="xLT-Zm-maI"/>
+                                    <outlet property="delegate" destination="1Jj-Pp-WJe" id="mLo-nG-lyR"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kKB-Hl-ztH"/>
+                        <color key="backgroundColor" name="AzureX11"/>
+                        <constraints>
+                            <constraint firstItem="F3F-bk-83n" firstAttribute="centerX" secondItem="kKB-Hl-ztH" secondAttribute="centerX" id="G5R-w0-scn"/>
+                            <constraint firstItem="cgt-v6-slL" firstAttribute="top" secondItem="kKB-Hl-ztH" secondAttribute="top" constant="35" id="Unb-7J-zf8"/>
+                            <constraint firstItem="cgt-v6-slL" firstAttribute="leading" secondItem="kKB-Hl-ztH" secondAttribute="leading" constant="35" id="ha9-vw-VkQ"/>
+                            <constraint firstItem="F3F-bk-83n" firstAttribute="centerY" secondItem="kKB-Hl-ztH" secondAttribute="centerY" id="koO-iL-3Yy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="F3F-bk-83n" id="bH5-FL-edz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnm-eE-ZL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="-44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="40" height="32"/>
+        <image name="logo" width="1024" height="1024"/>
+        <namedColor name="AzureX11">
+            <color red="0.92156862745098034" green="0.9882352941176471" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Tuscany">
+            <color red="0.69019607843137254" green="0.57647058823529407" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
